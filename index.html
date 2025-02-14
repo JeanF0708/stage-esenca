@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma page web</title> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 style="color:rgb(0, 255, 21)">Le titre de ma page</h1>
+        <h2>le sous-titre</h2>
+        <p class="paragraphe-rouge">Lorem ipsum dolor <strong>sit</strong> amet consectetur adipis
+            ibus nesciunt hic quos. Inventore dolore vero laudantium repellat a molestiae eligendi error velit quia.</p>
+        <span>Lorem ipsum dolor, sit amet conse</span>
+        <span>Lorem ipsum dolor, sit amet conse</span>
+        <span>Lorem ipsum dolor, sit amet conse</span>
+    </div>
+    <div>
+        <button onclick="changeColor()">clique ici</button>
+        <h1>Le titre de ma page</h1>
+        <h2>le sous-titre</h2>
+        <p>Lorem ipsum dolor <strong>sit</strong> amet consectetur adipis
+            ibus nesciunt hic quos. Inventore dolore vero laudantium repellat a molestiae eligendi error velit quia.</p>
+        <span>Lorem ipsum dolor, sit amet conse</span>
+        <span>Lorem ipsum dolor, sit amet conse</span>
+        <a href="page2.html">la page 2</a>
+        <img src="https://placehold.co/250x400" alt="fausse image">
+        <span>Lorem ipsum dolor, sit amet conse</span>
+        <ul>
+            <li>pomme</li>
+            <li>fraise</li>
+            <li>abricot</li>
+        </ul>
+    </div>
+    <script>
+        console.log("bonjour la console")
+        function changeColor(){
+            let allparagraph = document.querySelectorAll("p")
+            console.log(allparagraph)
+            for (let index = 0; index < allparagraph.length; index++) {
+                const element = allparagraph[index];
+                element.style.background = "green"
+            }
+        }
+    </script>
+</body>
+</html>
